@@ -2,7 +2,11 @@
   "name": "aws-todo",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "invoke-create": "sls invoke local --function create"
+  },
   "dependencies": {
+    "aws-sdk": "^2.1210.0",
     "express": "^4.17.1",
     "serverless-http": "^2.7.0",
     "uuid": "^9.0.0"
