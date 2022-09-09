@@ -2,6 +2,11 @@ const AWS = require("aws-sdk");
 const TODO_TABLE = process.env.TODO_TABLE;
 const dynamoDbClient = new AWS.DynamoDB.DocumentClient();
 
+/*
+  Example:
+  curl --location --request GET 'https://3quh2ijg3e.execute-api.us-east-1.amazonaws.com/dev/todos/39d68d20-2ed4-11ed-925a-e9834c4d158a'
+*/
+
 module.exports.deleteTodo = (event, context, callback) => {
   const params = {
     TableName: TODO_TABLE,
