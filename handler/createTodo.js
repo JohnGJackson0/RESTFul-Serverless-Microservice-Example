@@ -29,7 +29,7 @@ module.exports.createTodo = async (event, context, callback) => {
       todo: data.todo,
       checked: false,
       createdAt: timestamp,
-      upatedAt: timestamp,
+      updatedAt: timestamp,
     },
   };
 
